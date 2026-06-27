@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en-IE">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ireland Take-Home Pay Calculator 2025 — Income Tax, USC & PRSI</title>
+<meta name="description" content="Free Irish salary calculator 2025. Calculate your take-home pay after income tax, USC, and PRSI. Covers single, married, and civil partnership status. Updated for 2025 Revenue rates.">
+<meta name="keywords" content="ireland take home pay calculator, irish salary calculator, USC calculator ireland, PRSI calculator, net pay calculator ireland 2025, income tax ireland calculator">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☘️</text></svg>">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6626869606288906" crossorigin="anonymous"></script>
+<meta property="og:title" content="Ireland Take-Home Pay Calculator 2025">
+<meta property="og:description" content="See exactly what you take home after income tax, USC, and PRSI. Updated for Revenue 2025 rates.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Ireland Take-Home Pay Calculator","description":"Free Irish salary calculator for 2025 tax year","applicationCategory":"FinanceApplication","offers":{"@type":"Offer","price":"0"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How is income tax calculated in Ireland?","acceptedAnswer":{"@type":"Answer","text":"Ireland uses two income tax rates: 20% (standard rate) and 40% (higher rate). Single workers pay 20% on income up to €42,000 and 40% above that. Married couples with one income pay 20% up to €51,000. The tax is reduced by tax credits — the Personal Tax Credit (€1,875) and Employee Tax Credit (€1,875) give most PAYE workers €3,750 in credits."}},{"@type":"Question","name":"What is the USC in Ireland?","acceptedAnswer":{"@type":"Answer","text":"The Universal Social Charge (USC) is a tax on gross income. In 2025, the rates are: 0.5% on the first €12,012, 2% on €12,013–€25,760, 4% on €25,761–€70,044, and 8% on income above €70,044. Medical card holders and those earning under €13,000 are exempt from USC."}},{"@type":"Question","name":"What is PRSI in Ireland?","acceptedAnswer":{"@type":"Answer","text":"Pay Related Social Insurance (PRSI) is a contribution that funds social welfare benefits including the state pension. Most employees pay Class A PRSI at 4% on all earnings above €352 per week (€18,304 per year). Your employer also pays PRSI at 11.05% on your earnings above €441 per week."}},{"@type":"Question","name":"What are Irish tax credits?","acceptedAnswer":{"@type":"Answer","text":"Tax credits reduce your income tax bill directly. Every employee gets the Personal Tax Credit (€1,875) and the Employee Tax Credit (€1,875) — a total of €3,750 in 2025. This means you pay zero income tax on approximately the first €18,750 of income. Additional credits exist for married couples, carers, renters, and others."}},{"@type":"Question","name":"How does the marriage tax benefit work in Ireland?","acceptedAnswer":{"@type":"Answer","text":"Married couples and civil partners can choose joint assessment, which can significantly reduce tax. The standard rate band increases to €51,000 (single income) or up to €84,000 (dual income). They also receive two Personal Tax Credits (€3,750 total) plus two Employee Tax Credits if both work. The higher earner's unused band can transfer to the lower earner."}}]}</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f8fafc;--s:#fff;--b:#e2e8f0;--b2:#cbd5e1;--t:#0f172a;--m:#64748b;--d:#94a3b8;--gn:#16a34a;--gn-l:#f0fdf4;--gn-b:#bbf7d0;--gn2:#15803d;--yl:#d97706;--yl-l:#fffbeb;--yl-b:#fde68a;--rd:#dc2626;--pu:#7c3aed;--or:#ea580c}
+body{background:var(--bg);color:var(--t);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:15px;line-height:1.6}
+a{color:var(--gn2)}a:hover{text-decoration:underline}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{background:var(--s);border-bottom:1px solid var(--b);padding:14px 0}
+.hdr{display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:20px;font-weight:800;letter-spacing:-.5px}.logo em{color:var(--gn2);font-style:normal}
+.hero{padding:32px 0 24px;text-align:center}
+.hero h1{font-size:clamp(22px,4vw,38px);font-weight:800;line-height:1.15;letter-spacing:-.5px;margin-bottom:10px}
+.hero h1 em{color:var(--gn2);font-style:normal}
+.hero p{font-size:16px;color:var(--m);max-width:540px;margin:0 auto 18px}
+.badge-row{display:flex;justify-content:center;gap:8px;flex-wrap:wrap}
+.badge{background:var(--s);border:1px solid var(--b);border-radius:20px;padding:3px 13px;font-size:12px;font-weight:600;color:var(--m)}
+.badge.gn{background:var(--gn-l);border-color:var(--gn-b);color:var(--gn)}
+.grid{display:grid;grid-template-columns:1fr 300px;gap:22px;padding-bottom:48px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+.card{background:var(--s);border:1px solid var(--b);border-radius:16px;padding:24px}
+.card-title{font-size:15px;font-weight:700;margin-bottom:16px;display:flex;align-items:center;gap:8px}
+.card-title::before{content:'';width:4px;height:18px;background:var(--gn2);border-radius:2px}
+.fg{margin-bottom:14px}
+.fg label{display:block;font-size:12px;font-weight:600;color:var(--m);margin-bottom:5px;text-transform:uppercase;letter-spacing:.2px}
+select,input[type=number]{width:100%;padding:10px 13px;border:1.5px solid var(--b2);border-radius:8px;font-size:15px;color:var(--t);background:var(--s);transition:border-color .15s;-moz-appearance:textfield}
+input[type=number]::-webkit-inner-spin-button{-webkit-appearance:none}
+select:focus,input:focus{outline:none;border-color:var(--gn2)}
+.iw{position:relative}.pfx{position:absolute;left:12px;top:50%;transform:translateY(-50%);font-weight:700;color:var(--m);pointer-events:none}
+.has-pfx input{padding-left:26px}
+.hint{font-size:11px;color:var(--d);margin-top:4px}
+.fr2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.tab-toggle{display:flex;background:var(--bg);border:1px solid var(--b2);border-radius:8px;padding:3px;gap:2px;margin-bottom:16px}
+.tt-btn{flex:1;background:none;border:none;border-radius:6px;padding:6px 10px;font-size:12px;font-weight:600;color:var(--m);cursor:pointer;transition:all .12s}
+.tt-btn.active{background:var(--s);color:var(--gn2);box-shadow:0 1px 3px rgba(0,0,0,.1)}
+.calc-btn{width:100%;background:var(--gn2);color:#fff;border:none;border-radius:10px;padding:13px;font-size:16px;font-weight:700;cursor:pointer;margin-top:4px;transition:background .15s}
+.calc-btn:hover{background:#166534}
+.result-box{display:none;margin-top:22px;border-radius:12px;padding:22px;border:2px solid var(--gn-b);background:var(--gn-l)}
+.r-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;opacity:.7;margin-bottom:4px}
+.r-score{font-size:50px;font-weight:800;line-height:1;letter-spacing:-1px;color:var(--gn)}
+.r-sub{font-size:13px;color:var(--m);margin-top:5px;margin-bottom:16px}
+.r-periods{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:16px}
+.r-p{background:rgba(0,0,0,.04);border-radius:8px;padding:10px;text-align:center}
+.r-p-v{font-size:16px;font-weight:800}.r-p-l{font-size:10px;color:var(--m);text-transform:uppercase;letter-spacing:.3px;margin-top:2px}
+.breakdown{display:flex;flex-direction:column;gap:0}
+.br-row{display:flex;justify-content:space-between;align-items:center;font-size:13px;padding:8px 0;border-bottom:1px solid rgba(0,0,0,.06)}
+.br-row:last-child{border-bottom:none;font-weight:700;font-size:14px}
+.br-row label{color:var(--m);display:flex;align-items:center;gap:6px}
+.br-dot{width:8px;height:8px;border-radius:2px;flex-shrink:0}
+.br-neg{color:var(--rd)}.br-pos{color:var(--gn)}
+.eff-rate{display:flex;gap:12px;margin-top:14px}
+.er-box{flex:1;background:rgba(0,0,0,.04);border-radius:8px;padding:10px;text-align:center}
+.er-v{font-size:20px;font-weight:800}.er-l{font-size:10px;color:var(--m);text-transform:uppercase;margin-top:2px}
+.info-card{background:var(--s);border:1px solid var(--b);border-radius:12px;padding:16px;margin-bottom:12px}
+.info-card h3{font-size:14px;font-weight:700;margin-bottom:10px}
+.band-row{display:flex;align-items:center;gap:8px;font-size:12px;margin-bottom:6px}
+.band-dot{width:10px;height:10px;border-radius:2px;flex-shrink:0}
+.faq-item{border-bottom:1px solid var(--b);padding:10px 0;cursor:pointer}
+.faq-item:last-child{border-bottom:none}
+.faq-q{font-size:13px;font-weight:600;display:flex;justify-content:space-between;align-items:center;gap:8px}
+.faq-q::after{content:'+';font-size:17px;color:var(--d)}
+.faq-item.open .faq-q::after{content:'−'}
+.faq-a{display:none;font-size:12px;color:var(--m);margin-top:7px;line-height:1.6}
+.faq-item.open .faq-a{display:block}
+.seo{background:var(--s);border:1px solid var(--b);border-radius:16px;padding:28px;margin-bottom:28px}
+.seo h2{font-size:21px;font-weight:800;margin-bottom:12px}
+.seo h3{font-size:15px;font-weight:700;margin:20px 0 8px}
+.seo p{color:var(--m);margin-bottom:10px;font-size:14px}
+.seo ul{color:var(--m);padding-left:18px;font-size:14px}.seo ul li{margin-bottom:5px}
+.tax-table{width:100%;border-collapse:collapse;font-size:13px;margin-top:10px}
+.tax-table th{text-align:left;padding:7px 10px;background:var(--bg);font-size:10px;text-transform:uppercase;color:var(--m);border-bottom:2px solid var(--b)}
+.tax-table td{padding:8px 10px;border-bottom:1px solid var(--b)}
+.tax-table tr:last-child td{border-bottom:none}
+.t20{color:var(--gn2);font-weight:600}.t40{color:var(--yl);font-weight:600}.t05{color:#94a3b8;font-weight:600}.t4{color:var(--or);font-weight:600}.t8{color:var(--rd);font-weight:600}
+footer{background:var(--s);border-top:1px solid var(--b);padding:20px 0;text-align:center;font-size:12px;color:var(--d)}
+footer p{margin-bottom:4px}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap"><div class="hdr">
+    <div class="logo"><span style="font-size:18px;margin-right:6px">🇮🇪</span>IE<em>Pay</em>Calc.io</div>
+    <div style="font-size:12px;color:var(--m)">Free · 2025 tax year</div>
+  </div></div>
+</header>
+
+<div class="wrap">
+  <div class="hero">
+    <h1>Ireland Take-Home Pay Calculator<br><em>2025 Tax Year</em></h1>
+    <p>See exactly what you keep after income tax, Universal Social Charge (USC), and PRSI contributions.</p>
+    <div class="badge-row">
+      <span class="badge gn">✓ Free · No signup</span>
+      <span class="badge">2025 Revenue rates</span>
+      <span class="badge">USC included</span>
+      <span class="badge">Single &amp; Married</span>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div>
+      <div class="card">
+        <div class="card-title">Your Salary Details</div>
+
+        <div class="tab-toggle">
+          <button class="tt-btn active" onclick="setFreq('annual',this)">Annual</button>
+          <button class="tt-btn" onclick="setFreq('monthly',this)">Monthly</button>
+          <button class="tt-btn" onclick="setFreq('weekly',this)">Weekly</button>
+          <button class="tt-btn" onclick="setFreq('hourly',this)">Hourly</button>
+        </div>
+
+        <div class="fg">
+          <label id="income-label">Annual Gross Salary</label>
+          <div class="iw has-pfx"><span class="pfx">€</span>
+            <input type="number" id="income" placeholder="45,000" min="0">
+          </div>
+          <div class="hint" id="income-hint">Enter your gross salary before any deductions</div>
+        </div>
+
+        <div class="fr2">
+          <div class="fg">
+            <label>Tax Status</label>
+            <select id="status">
+              <option value="single">Single</option>
+              <option value="married1">Married — 1 income</option>
+              <option value="married2">Married — 2 incomes</option>
+            </select>
+          </div>
+          <div class="fg">
+            <label>Hours per week <span style="font-weight:400;font-size:10px">(hourly only)</span></label>
+            <input type="number" id="hours" placeholder="39" min="1" max="80">
+          </div>
+        </div>
+
+        <div class="fg">
+          <label>Pension Contribution</label>
+          <div class="iw has-pfx"><span class="pfx">%</span>
+            <input type="number" id="pension" placeholder="0" min="0" max="100" style="padding-left:30px">
+          </div>
+          <div class="hint">% of gross deducted before tax (occupational pension)</div>
+        </div>
+
+        <button class="calc-btn" onclick="calculate()">Calculate My Take-Home →</button>
+
+        <div class="result-box" id="result">
+          <div class="r-label">Annual Take-Home Pay</div>
+          <div class="r-score" id="r-annual">—</div>
+          <div class="r-sub" id="r-sub">After all deductions</div>
+          <div class="r-periods">
+            <div class="r-p"><div class="r-p-v" id="r-monthly">—</div><div class="r-p-l">Per Month</div></div>
+            <div class="r-p"><div class="r-p-v" id="r-weekly">—</div><div class="r-p-l">Per Week</div></div>
+            <div class="r-p"><div class="r-p-v" id="r-daily">—</div><div class="r-p-l">Per Day</div></div>
+          </div>
+          <div class="breakdown" id="r-breakdown"></div>
+          <div class="eff-rate" id="r-rates"></div>
+        </div>
+      </div>
+
+      <div class="seo" style="margin-top:22px">
+        <h2>Irish Income Tax Rates 2025</h2>
+        <p>Ireland uses two income tax rates — 20% (standard rate) and 40% (higher rate). Your tax is then reduced by <strong>tax credits</strong>, not by allowances like the UK. Every PAYE worker gets the Personal Tax Credit (€1,875) and Employee Tax Credit (€1,875), totalling €3,750 in annual credits — which means you pay no income tax on roughly the first €18,750 earned.</p>
+
+        <h3>Income Tax Bands 2025</h3>
+        <table class="tax-table">
+          <tr><th>Status</th><th>20% Band (Standard)</th><th>40% (Higher)</th></tr>
+          <tr><td>Single</td><td class="t20">Up to €42,000</td><td class="t40">Above €42,000</td></tr>
+          <tr><td>Married — 1 income</td><td class="t20">Up to €51,000</td><td class="t40">Above €51,000</td></tr>
+          <tr><td>Married — 2 incomes</td><td class="t20">Up to €84,000</td><td class="t40">Above €84,000</td></tr>
+        </table>
+
+        <h3>Universal Social Charge (USC) 2025</h3>
+        <p>The USC applies to gross income and is charged in addition to income tax. There is no credit or allowance against USC — it applies from the first euro above €12,012.</p>
+        <table class="tax-table">
+          <tr><th>Gross Income Band</th><th>USC Rate</th></tr>
+          <tr><td>Up to €12,012</td><td class="t05">0.5%</td></tr>
+          <tr><td>€12,013 – €25,760</td><td class="t20">2%</td></tr>
+          <tr><td>€25,761 – €70,044</td><td class="t4">4%</td></tr>
+          <tr><td>Above €70,044</td><td class="t8">8%</td></tr>
+        </table>
+        <p style="margin-top:8px">Earners below €13,000 are fully exempt from USC. Medical card holders pay a maximum of 2% regardless of income.</p>
+
+        <h3>PRSI 2025</h3>
+        <p>Class A PRSI (most employees) is charged at <strong>4%</strong> on all weekly earnings above €352 (€18,304/year). There is a weekly credit of €12 on earnings between €352 and €424 per week, which reduces PRSI in this band. Your employer pays an additional 11.05% employer PRSI on your earnings.</p>
+
+        <h3>Tax Credits 2025</h3>
+        <table class="tax-table">
+          <tr><th>Credit</th><th>Amount (annual)</th></tr>
+          <tr><td>Personal Tax Credit</td><td>€1,875</td></tr>
+          <tr><td>Employee Tax Credit (PAYE)</td><td>€1,875</td></tr>
+          <tr><td>Home Carer Credit</td><td>€1,800</td></tr>
+          <tr><td>Rent Tax Credit</td><td>Up to €1,000</td></tr>
+          <tr><td>Single Person Child Carer</td><td>€1,750</td></tr>
+        </table>
+
+        <h3>How to Maximise Your Take-Home Pay in Ireland</h3>
+        <ul>
+          <li><strong>Occupational pension</strong> — contributions to a Revenue-approved pension are fully deductible before income tax AND USC. Age-related limits apply: under 30 you can contribute up to 15% of net relevant earnings tax-free; over 60, up to 40%.</li>
+          <li><strong>Claim all tax credits</strong> — the Rent Tax Credit (€1,000/year for renters), Tuition Fees Credit, Medical Expenses Credit, and others are frequently unclaimed. Use Revenue MyAccount to check your credits.</li>
+          <li><strong>Remote working relief</strong> — you can claim 30% of broadband and electricity costs for days worked from home. Claim via your income tax return.</li>
+          <li><strong>Bike to Work scheme</strong> — save up to 52% on a bike (up to €1,500 for e-bikes) through salary sacrifice. No income tax, USC, or PRSI on the cost.</li>
+          <li><strong>Check your tax bands if married</strong> — if one spouse earns significantly more, switching to joint assessment and optimising the standard rate band transfer could save thousands annually.</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div>
+      <div class="info-card">
+        <h3>2025 Key Thresholds</h3>
+        <div class="band-row"><div class="band-dot" style="background:#16a34a"></div><span><strong>€42,000</strong> — Standard rate band (single)</span></div>
+        <div class="band-row"><div class="band-dot" style="background:#d97706"></div><span><strong>€51,000</strong> — Standard rate band (married 1 income)</span></div>
+        <div class="band-row"><div class="band-dot" style="background:#dc2626"></div><span><strong>€70,044</strong> — USC 8% rate begins</span></div>
+        <div style="margin-top:10px;padding-top:10px;border-top:1px solid var(--b);font-size:12px">
+          <div style="margin-bottom:5px"><strong>Tax Credits (single PAYE):</strong></div>
+          <div style="font-size:11px;color:var(--m)">Personal: €1,875 + Employee: €1,875 = <strong>€3,750</strong></div>
+          <div style="font-size:11px;color:var(--m);margin-top:3px">PRSI Class A: 4% above €18,304/yr</div>
+          <div style="font-size:11px;color:var(--m);margin-top:3px">USC exempt below €13,000</div>
+        </div>
+      </div>
+      <div class="info-card">
+        <h3>Frequently Asked Questions</h3>
+        <div class="faq-item" onclick="this.classList.toggle('open')">
+          <div class="faq-q">What is the USC and who pays it?</div>
+          <div class="faq-a">The Universal Social Charge (USC) is a tax on gross income introduced in 2011. It replaced two older levies. Almost everyone with income above €13,000 pays USC. Unlike income tax, there are no allowances or credits — the rates apply from the first euro above €12,012. Rates in 2025: 0.5%, 2%, 4%, and 8%.</div>
+        </div>
+        <div class="faq-item" onclick="this.classList.toggle('open')">
+          <div class="faq-q">How do Irish tax credits work?</div>
+          <div class="faq-a">Tax credits in Ireland directly reduce the tax you owe — not your taxable income. Every PAYE worker gets €3,750 in credits (Personal + Employee), meaning you pay zero income tax on roughly the first €18,750. If your tax liability is less than your credits, you don't pay tax but do not receive the difference back as a refund.</div>
+        </div>
+        <div class="faq-item" onclick="this.classList.toggle('open')">
+          <div class="faq-q">Do I pay PRSI on all my salary?</div>
+          <div class="faq-a">Class A PRSI (most employees) is 4% on weekly earnings above €352. There is no upper ceiling — unlike the UK where NI has a cap. There is a small weekly credit (€12) that applies to earnings between €352–€424 per week, which reduces the effective PRSI rate slightly for lower earners.</div>
+        </div>
+        <div class="faq-item" onclick="this.classList.toggle('open')">
+          <div class="faq-q">Can I reduce USC with pension contributions?</div>
+          <div class="faq-a">Yes — occupational pension contributions reduce your gross income for both income tax AND USC purposes. This makes pension contributions in Ireland exceptionally tax-efficient. If you're a 40% taxpayer, a €100 pension contribution costs you only €48 after tax and USC savings.</div>
+        </div>
+        <div class="faq-item" onclick="this.classList.toggle('open')">
+          <div class="faq-q">Why is my payslip different from this estimate?</div>
+          <div class="faq-a">This calculator uses standard Revenue tax credits and 2025 rates. Your actual payslip may differ if you have additional tax credits (home carer, medical, tuition), employer pension contributions, benefit-in-kind (e.g. company car), or share scheme income. For personalised calculations, use Revenue's PAYE Anytime service at revenue.ie.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <p>IEPayCalc.io — Free Ireland Take-Home Pay Calculator 2025</p>
+    <p style="margin-top:5px">Results are estimates based on standard Revenue 2025 rates using standard PAYE tax credits. Not personalised tax advice. Consult Revenue at revenue.ie or a registered tax agent for your specific circumstances.</p>
+    <p style="margin-top:8px"><a href="/privacy.html">Privacy Policy</a></p>
+  </div>
+</footer>
+
+<script>
+var inputFreq = 'annual';
+
+function setFreq(f, btn) {
+  inputFreq = f;
+  document.querySelectorAll('.tt-btn').forEach(function(b){b.classList.remove('active')});
+  btn.classList.add('active');
+  var labels = {annual:'Annual Gross Salary',monthly:'Monthly Gross Salary',weekly:'Weekly Gross Salary',hourly:'Hourly Rate'};
+  var hints = {annual:'Enter your gross annual salary before deductions',monthly:'Enter your gross monthly pay before deductions',weekly:'Enter your gross weekly pay before deductions',hourly:'Enter your hourly rate (before tax)'};
+  var placeholders = {annual:'45,000',monthly:'3,750',weekly:'865',hourly:'22.00'};
+  document.getElementById('income-label').textContent = labels[f];
+  document.getElementById('income-hint').textContent = hints[f];
+  document.getElementById('income').placeholder = placeholders[f];
+  document.getElementById('hours').closest('.fg').style.opacity = f==='hourly'?'1':'0.4';
+}
+
+function toAnnual(val, freq, h) {
+  if (freq==='monthly') return val*12;
+  if (freq==='weekly') return val*52;
+  if (freq==='hourly') return val*(h||39)*52;
+  return val;
+}
+
+function calcIncomeTax(taxable, status) {
+  var bands = {single:42000, married1:51000, married2:84000};
+  var band = bands[status] || 42000;
+  var credits = 3750;
+  if (status === 'married1' || status === 'married2') credits = 3750;
+  var tax = 0;
+  if (taxable <= band) {
+    tax = taxable * 0.20;
+  } else {
+    tax = band * 0.20 + (taxable - band) * 0.40;
+  }
+  return Math.max(0, tax - credits);
+}
+
+function calcUSC(gross) {
+  if (gross <= 13000) return 0;
+  var usc = 0;
+  var bands = [[12012,0.005],[13748,0.02],[44284,0.04],[Infinity,0.08]];
+  var limits = [12012, 25760, 70044, Infinity];
+  var rates = [0.005, 0.02, 0.04, 0.08];
+  var rem = gross, prev = 0;
+  for (var i=0; i<limits.length; i++) {
+    if (rem <= 0) break;
+    var top = limits[i];
+    var inBand = Math.min(rem, top - prev);
+    usc += inBand * rates[i];
+    rem -= inBand;
+    prev = top;
+  }
+  return usc;
+}
+
+function calcPRSI(gross) {
+  var weeklyThreshold = 352;
+  var annualThreshold = weeklyThreshold * 52;
+  if (gross <= annualThreshold) return 0;
+  return (gross - annualThreshold) * 0.04;
+}
+
+function fmt(n) { return '€' + Math.round(n).toLocaleString('en-IE'); }
+function fmtPct(n) { return (n*100).toFixed(1)+'%'; }
+
+function calculate() {
+  var rawIncome = parseFloat(document.getElementById('income').value)||0;
+  var hours = parseFloat(document.getElementById('hours').value)||39;
+  var status = document.getElementById('status').value;
+  var pensionPct = parseFloat(document.getElementById('pension').value)||0;
+
+  if (rawIncome<=0) { alert('Please enter your salary.'); return; }
+
+  var gross = toAnnual(rawIncome, inputFreq, hours);
+  var pension = gross * (pensionPct/100);
+  var taxable = gross - pension;
+
+  var incomeTax = calcIncomeTax(taxable, status);
+  var usc = calcUSC(gross - pension);
+  var prsi = calcPRSI(gross);
+  var totalDed = incomeTax + usc + prsi + pension;
+  var takeHome = gross - totalDed;
+
+  var statusLabels = {single:'Single',married1:'Married (1 income)',married2:'Married (2 incomes)'};
+
+  document.getElementById('result').style.display = 'block';
+  document.getElementById('r-annual').textContent = fmt(takeHome);
+  document.getElementById('r-sub').textContent = fmt(gross) + ' gross → ' + fmt(takeHome) + ' net (' + statusLabels[status] + ')';
+  document.getElementById('r-monthly').textContent = fmt(takeHome/12);
+  document.getElementById('r-weekly').textContent = fmt(takeHome/52);
+  document.getElementById('r-daily').textContent = fmt(takeHome/260);
+
+  var rows = [
+    {label:'Gross Salary', dot:'#16a34a', val:gross, neg:false},
+    {label:'Income Tax', dot:'#dc2626', val:incomeTax, neg:true},
+    {label:'USC', dot:'#ea580c', val:usc, neg:true},
+    {label:'PRSI (4%)', dot:'#d97706', val:prsi, neg:true},
+  ];
+  if (pension>0) rows.push({label:'Pension ('+pensionPct+'%)', dot:'#7c3aed', val:pension, neg:true});
+  rows.push({label:'Take-Home Pay', dot:'#16a34a', val:takeHome, neg:false});
+
+  document.getElementById('r-breakdown').innerHTML = rows.map(function(r) {
+    return '<div class="br-row"><label><div class="br-dot" style="background:'+r.dot+'"></div>'+r.label+'</label><span class="'+(r.neg?'br-neg':'br-pos')+'">'+fmt(r.val)+'</span></div>';
+  }).join('');
+
+  document.getElementById('r-rates').innerHTML =
+    '<div class="er-box"><div class="er-v">'+fmtPct(incomeTax/gross)+'</div><div class="er-l">Eff. Income Tax</div></div>'+
+    '<div class="er-box"><div class="er-v">'+fmtPct(usc/gross)+'</div><div class="er-l">USC Rate</div></div>'+
+    '<div class="er-box"><div class="er-v">'+fmtPct(totalDed/gross)+'</div><div class="er-l">Total Deducted</div></div>';
+
+  document.getElementById('result').scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+
+document.addEventListener('keydown', function(e){ if(e.key==='Enter') calculate(); });
+document.getElementById('hours').closest('.fg').style.opacity = '0.4';
+</script>
+</body>
+</html>

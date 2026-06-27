@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ireland-takehome-calculator.pages.dev/sitemap.xml
